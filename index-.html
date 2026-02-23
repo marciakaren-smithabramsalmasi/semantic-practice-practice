@@ -1,0 +1,124 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="author" content="Marcia Karen Smith Abrams Almasi">
+    <title>More Semantic HTML Practice</title>
+<body>
+        <header>
+        <h1>Today In-Class Activity</h1>
+        <p>More Semantic HtML Practice</p>
+    </header>
+    <main>
+        <p>
+            <h2>Today we'll practice More with Semantic HTML for marking up text, as well as grouping
+            content by topic and using headings to help the user know what the topics on the page are.  
+            Remember, the HTML you add to your pages tells the user (and search engines) the kind of content
+            they're going to find.</h2>
+
+            <h2>Follow the steps below to complete this activity:</h2>
+<olL>
+               <li>1. Add your name</li>
+               <li>2. Open this file in your browser so you can view and test it while we code.</li>
+               <li>3. Review this file and its content to get a better idea of what will be on the final page.</li> 
+               <li>4. Some of the tags have been added for you to help you see how this content could be marked up semantically.  
+                Follow along in class as we add the rest of the tags to the page.</li>
+                <li>5. While we work, save your file and refresh it in the browser often to ensure that it is loading as expected.</li>
+</ol>
+
+<section>
+    <h3>Basic Text Tags</h3> 
+    <ul>
+        <li><code>&lt;p&gt;<code> - for paragraph text, usually multiple lines</li>
+        <li><code>&lt;em&gt; - for text that needs to be emphasized in some way (this adds meaning)</li>
+        <li><code>&lt;strong&gt;</code>- for important text (this adds meaning)</li>
+        <li><code>&lt;cite&gt;</code> - for the citations</li> 
+        <li>&lt:mark&gt;<code> - for highlighted text (this adds meaning)</li>
+        <li>&lt;b&gt;</li><code> - text that needs attention, but isn't important or a heading</li>
+        <li>&lt;i&gt;<code> - text in an alternative voice</li>
+        <li>&lt;u&gt;<code> - text that should appear differently than normal text, underlined by default</li>
+        <li>&lt;kbd&gt;<code> - for keyboard input</li>
+        <li><code>&Lt;samp&gt;</li></code> - for sample output from a computer</li>
+        <li><code>&lt;var&gt;</code> - for variable in a computer program</li>
+            </ul>
+            <p>When choosing a tag pair to wrap your content in, be sure to think about what that your text actually is.  Is it just a paragraph?
+Then paragraph tags are fine. Is there a more specific way to describe that content?  Maybe it's an address
+or a code sample.
+There are a lot of semantic HTML, tags for text to help you define that content in the best and most specific way possible.
+            </p>
+<strong>Remember: HTML tags aren't used to style the text a certain way.  If you want bold text but that text isn't actually important to
+the user or meaning of your text, don't use a strong or b tags or wrap it in a heading tag pair.</strong></p>
+        </section>
+
+        <section>
+            <h3>Tags for Grouping and Describing Content</h3>
+
+            <ul> 
+                <li>headings
+                    <ul>
+                
+        <li><code>&lt;h1&gt;</code> - the most important heading, only use one per page, and it has to be first. Should be the page main topic or
+            company name</li>
+        <li><code>&lt;h2&gt;</code> - the second level of heading. Anything located in the document as a sub-topic of the h1 will be labeled in an h2</li>
+        <li><code>&lt;h3&gt;<c/code> - third level of heading for sub-topics of level 2 headings</li>
+        <li><code>&lt;h4&gt;</code> - fourth level of heading for sub-topics of level 3 headings</li>
+        <li><code>&lt;h5&gt;</code> - fifth level of heading for sub-topics of level 4 headings</li>
+        <li><code>&lt;h6&gt;</code> - sixth level of heading for sub-topics of level 5 headings</li>
+                    </ul>
+                </li>
+    <li><code>&lt;section&gt;</code> - container for grouping related content</li>
+                    </ul>
+                    <p>Headings have specific uses, and they don't have anything to do with the way they look.  We use headings the way you would
+use an outline to map out topic for a paper. Think in terms of the main topic, sub-topic of that, and even sub-topic for more
+levels after that, up to six levels.  A container will never have or need more than one heading inside of it.</p>
+
+                    <p>The section is a more flexible semantic container than those we'll learn about in the next module. All section require headings, 
+so be sure that you understand which level is appropriate for your heading inside of any sections. You can also have a section>
+with its own heading nestled inside of another section with a heading (if the section nested inside is a sub-topic of the outer section). 
+</p>
+                </section>
+                <section>
+                    <h3>Special Charters</h3>
+
+
+                    <ul>
+                        <li>Copyright= &copy; - the copyright symbol</li>
+                        <li> " " =&quot; - the non-breaking space symbol (used to ensure that two words are always displayed next to each other on the same 
+    the less than and greater than characters will allow you to type these on your page and in code samples without
+    line, this doesn't include or need the quotes, that's just so you can see it)</li>
+    <li> &quot; &amp;: - the amperstand (not using the entity character can cause issues on your page)</li>
+    <li>&lt; and &gt; - the less than and greater than characters will allow you to type these on your page and in code sample without
+    them breaking your HTML (which uses those characters a lot!)</li> 
+
+     <p>These special characters come in handy on the web.  Some characters are things that you can't just type out on your computer,
+    while others replace characters that could break your code.  They can add formatting (like in the case of a non-breaking space.),
+    zyBook includes a link to a table of entity characters that is a good thing to bookmark.</p>
+    
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>List Tags</h3>
+                    </section><ul>
+
+<li><code>&lt;ol&gt;</code>ordered list</li>
+<li><code>&lt;ul&gt;</code>unordered list</li>
+<li><code>&lt;li&gt;</code> - an individual list item</li>
+                    </ul>
+                   
+                    <p>Throughout this page, we use lists to give a list of the tags related to the topic given by the heading in each section.  Lists can be 
+    very useful, as there is plenty of content that is displayed in a list format, but they also help accessibility.  Lists will tell screen
+    reader users how many elements there are in that list (they can use the list items to do that), which means that a user knows
+    how many items are in the group that they'll have to listen to. We'll use these a lot in our pages, especially when adding navigation.
+                    </p>
+                    <p>You can also nest lists inside of each other, as you saw in the headings and grouping content section above. Making your
+    content easier to scan and understand improves the user experience, and lists can be a big part of that.</p>
+                </section>
+            </main>
+
+            <footer>
+                <p>Copyright &copy; 2023 - GIT215 - Prof. Barnet`</p>
+            </footer>
+        </body>
+        </html>
+ml>"@ | Out-File -FilePath index.html -Encoding UTF-8
